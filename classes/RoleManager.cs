@@ -3,7 +3,7 @@ using ButtonManager;
 
 namespace RoleManager
 {
-    class SheriffRole
+    public class SheriffRole
     {
         public static string name = "Sheriff";
         public static Color roleColor = new Color(1, (float)(204.0 / 255.0), 0, 1);
