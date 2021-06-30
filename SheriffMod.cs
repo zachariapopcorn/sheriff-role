@@ -27,15 +27,6 @@ namespace SheriffMod
             Harmony.PatchAll();
         }
 
-        [HarmonyPatch(typeof(AmongUsClient), nameof(AmongUsClient.Awake))]
-        public static class ModManagerClass
-        {
-            public static void Postfix()
-            {
-                ModManager.Instance.ShowModStamp();
-            }
-        }
-
         [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.RpcSetInfected))]
         public static class SetInfectedPatch
         {
